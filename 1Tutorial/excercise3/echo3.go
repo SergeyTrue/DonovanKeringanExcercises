@@ -1,4 +1,4 @@
-package excercise3
+package main
 
 import (
 	"strings"

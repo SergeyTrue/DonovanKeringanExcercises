@@ -1,4 +1,4 @@
-package _Tutorial
+package main
 
 import (
 	"fmt"
