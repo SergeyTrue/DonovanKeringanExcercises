@@ -34,3 +34,20 @@ go build -o exercise4.exe exercise4.go
 go build -o fetch.exe fetch.go
 # Запустите исполняемый файл с указанием конкретного входного url
 .\fetch.exe http://google.com
+```
+
+
+### Упражнение 1.8.
+Измените программу `fetch` так, чтобы к каждому аргументу URL автоматически добавлялся префикс `http://` в случае отсутствия в нем такового. Можете воспользоваться функцией `strings.HasPrefix`.
+```bash
+# запустите исполняемый файл, передавая url в качестве аргумента без указания протокола
+go run fetch.go google.com google.com
+```
+
+### Упражнение 1.9.
+Измените программу `fetch` так, чтобы она выводила код состояния HTTP, содержащийся в `resp.Status`.
+
+```bash
+go build -o fetch.exe .\fetch.go
+.\fetch.exe  example.com 
+```
