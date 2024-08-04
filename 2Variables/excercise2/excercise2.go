@@ -1,9 +1,9 @@
 package main
 
 import (
-	tempconv "DonovanKeringanExcercises/2Variables/excercise1"
 	"flag"
 	"fmt"
+	tempconv "github.com/SergeyTrue/DonovanKeringanExcercises/2Variables/excercise1"
 	"os"
 )
 
