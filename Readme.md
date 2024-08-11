@@ -88,3 +88,18 @@ bit position s, testing the rightmost bit each time. Compare its performance to 
 ### Exercise 2.5: 
 The expression x&(x-1) clears the rightmost non-zero bit of x. Write a version
 of PopCount that counts bits by using this fact, and assess its performance
+
+## Exercise 3.1
+If the function `f` returns a non-finite `float64` value, the SVG file will contain invalid `<polygon>` elements (although many SVG renderers handle this gracefully). Modify the program to skip invalid polygons.
+
+## Exercise 3.2
+Experiment with visualizations of other functions from the math package. Can you produce an egg box, moguls, or a saddle?
+
+## Exercise 3.3
+Color each polygon based on its height, so that the peaks are colored red (`#ff0000`) and the valleys blue (`#0000ff`).
+
+## Exercise 3.4
+Following the approach of the Lissajous example in Section 1.7, construct a web server that computes surfaces and writes SVG data to the client. The server must set the `Content-Type` header like this:
+
+```go
+w.Header().Set("Content-Type", "image/svg+xml")
