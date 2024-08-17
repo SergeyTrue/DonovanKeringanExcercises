@@ -103,3 +103,21 @@ Following the approach of the Lissajous example in Section 1.7, construct a web 
 
 `http://localhost:8001/?cells=700`
 ![egg box](3BasicDataTypes/Excercise_3_4/egg_box.png)
+
+## Exercise 3.5
+Implement a full-color Mandelbrot set using the function `image.NewRGBA` and the type `color.RGBA` or `color.YCbCr`.
+![Mandelbrot Set](mandelbrot.png)
+
+## Exercise 3.6
+Supersampling is a technique to reduce the effect of pixelation by computing the color value at several points within each pixel and taking the average. The simplest method is to divide each pixel into four “subpixels.” Implement it.
+
+## Exercise 3.7
+Another simple fractal uses Newton’s method to find complex solutions to a function such as $ z^4 - 1 = 0 $. Shade each starting point by the number of iterations required to get close to one of the four roots. Color each point by the root it approaches.
+
+## Exercise 3.8
+Rendering fractals at high zoom levels demands great arithmetic precision. Implement the same fractal using four different representations of numbers: `complex64`, `complex128`, `big.Float`, and `big.Rat`. (The latter two types are found in the `math/big` package. `Float` uses arbitrary but bounded-precision floating-point; `Rat` uses unbounded-precision rational numbers.) How do they compare in performance and memory usage? At what zoom levels do rendering artifacts become visible?
+
+## Exercise 3.9
+Write a web server that renders fractals and writes the image data to the client. Allow the client to specify the `x`, `y`, and `zoom` values as parameters to the HTTP request.
+
+
