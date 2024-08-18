@@ -3,4 +3,4 @@ Supersampling is a technique to reduce the effect of pixelation by computing the
 ```
 go run .\resampling.go server
 ```
-![Mandelbrot Resampled](3BasicDataTypes/Excercise_3_6/mandelbrot_resampled.png)
+![Mandelbrot Resampled](mandelbrot_resampled.png)
