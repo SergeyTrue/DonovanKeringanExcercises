@@ -3,4 +3,4 @@ Another simple fractal uses Newton’s method to find complex solutions to a fun
 ```
 go run .\newtonFractal.go server
 ```
-![Newton fractal] (newtonFractal.png)
+![Newton fractal](newtonFractal.png)
