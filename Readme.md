@@ -110,6 +110,10 @@ Implement a full-color Mandelbrot set using the function `image.NewRGBA` and the
 
 ## Exercise 3.6
 Supersampling is a technique to reduce the effect of pixelation by computing the color value at several points within each pixel and taking the average. The simplest method is to divide each pixel into four “subpixels.” Implement it.
+```
+go run .\resampling.go server
+```
+![Mandelbrot Resampled](3BasicDataTypes/Excercise_3_6/mandelbrot_resampled.png)
 
 ## Exercise 3.7
 Another simple fractal uses Newton’s method to find complex solutions to a function such as $ z^4 - 1 = 0 $. Shade each starting point by the number of iterations required to get close to one of the four roots. Color each point by the root it approaches.
