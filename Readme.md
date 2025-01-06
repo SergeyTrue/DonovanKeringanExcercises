@@ -189,3 +189,17 @@ Enhance `comma` so that it deals correctly with floating-point numbers and an op
 
 ## Exercise 3.12
 Write a function that reports whether two strings are anagrams of each other, that is, they contain the same letters in a different order.
+
+## Exercise 4.1:
+Write a function that counts the number of bits that are different in two SHA256
+hashes. (See PopCount from Section 2.6.2.)
+
+## Exercise 4.2
+Write a program that prints the SHA256 hash of its standard input by default but supports a command-line flag to print the SHA384 or SHA512 hash instead.
+How to run:
+```
+go run main.go -sha 512 "Hello, World!"
+```
+
+## Exercise 4.3: 
+Rewrite reverse to use an array pointer instead of a slice.
