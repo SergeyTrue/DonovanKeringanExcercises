@@ -40,7 +40,7 @@ func main() {
 		{"mandelbrot64.png", mandelbrot64},
 		{"mandelbrot128.png", mandelbrot128},
 		{"mandelbrotBigFloat.png", mandelbrotBigFloat},
-		//{"mandelbrotBigRat.png", mandelbrotBigRat},
+		{"mandelbrotBigRat.png", mandelbrotBigRat},
 	} {
 		f, err := os.Create(fn.filename)
 		if err != nil {

@@ -35,19 +35,6 @@ func main() {
 	drawImages(f)
 }
 
-func drawSingleImage(out io.Writer) {
-	srcImg := drawSrcMandelbrot()
-	outImg := resample(1000, 1000, srcImg)
-	err := png.Encode(out, outImg)
-	if err != nil {
-		log.Fatal(err)
-	}
-	err2 := png.Encode(out, srcImg)
-	if err2 != nil {
-		log.Fatal(err2)
-	}
-}
-
 func drawImages(out io.Writer) {
 	srcImg := drawSrcMandelbrot()
 	resampledImg := resample(1000, 1000, srcImg)

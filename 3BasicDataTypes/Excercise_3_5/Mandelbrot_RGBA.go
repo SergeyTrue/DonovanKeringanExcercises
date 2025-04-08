@@ -13,7 +13,7 @@ import (
 func main() {
 	const (
 		xmin, ymin, xmax, ymax = -2, -2, +2, +2
-		width, height          = 10000, 10000
+		width, height          = 5000, 5000
 	)
 	f, err := os.Create("mandelbrot.png")
 	if err != nil {
